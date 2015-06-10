@@ -43,3 +43,8 @@ gem 'best_in_place'
 
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
+gem 'jquery-datatables-rails'
+
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
