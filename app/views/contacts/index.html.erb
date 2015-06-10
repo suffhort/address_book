@@ -5,22 +5,20 @@
 <table id='contacts-datatable' class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:contact_name) %></th>
       <th><%= model_class.human_attribute_name(:email_address) %></th>
       <th><%= model_class.human_attribute_name(:phone_number) %></th>
       <th><%= model_class.human_attribute_name(:physical_address) %></th>
-      <th><%= model_class.human_attribute_name(:contact_name) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= link_to contact.id, contact_path(contact) %></td>
+        <td><%= link_to contact.contact_name, contact_path(contact) %></td>
         <td><%= contact.email_address %></td>
         <td><%= contact.phone_number %></td>
         <td><%= contact.physical_address %></td>
-        <td><%= contact.contact_name %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_contact_path(contact), :class => 'btn btn-default btn-xs' %>

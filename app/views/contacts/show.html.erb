@@ -5,13 +5,13 @@
 
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:email_address) %>:</strong></dt>
-  <dd><%= @contact.email_address %></dd>
+  <dd><%= best_in_place @contact, :email_address %></dd>
   <dt><strong><%= model_class.human_attribute_name(:phone_number) %>:</strong></dt>
-  <dd><%= @contact.phone_number %></dd>
+  <dd><%= best_in_place @contact, :phone_number %></dd>
   <dt><strong><%= model_class.human_attribute_name(:physical_address) %>:</strong></dt>
-  <dd><%= @contact.physical_address %></dd>
+  <dd><%= best_in_place @contact, :physical_address %></dd>
   <dt><strong><%= model_class.human_attribute_name(:contact_name) %>:</strong></dt>
-  <dd><%= @contact.contact_name %></dd>
+  <dd><%= best_in_place @contact, :contact_name %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
