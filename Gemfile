@@ -38,3 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'mongoid'
+gem 'best_in_place'
+
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
